@@ -7,33 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		566A42D2207B955A00968E49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566A42D1207B955A00968E49 /* AppDelegate.swift */; };
-		566A42D4207B955A00968E49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566A42D3207B955A00968E49 /* ViewController.swift */; };
-		566A42D7207B955A00968E49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566A42D5207B955A00968E49 /* Main.storyboard */; };
-		566A42D9207B955A00968E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566A42D8207B955A00968E49 /* Assets.xcassets */; };
-		566A42DC207B955A00968E49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566A42DA207B955A00968E49 /* LaunchScreen.storyboard */; };
-		56A3ED64207B975500E91012 /* MSCirclePad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A3ED60207B96D700E91012 /* MSCirclePad.framework */; };
-		56A3ED65207B975500E91012 /* MSCirclePad.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 56A3ED60207B96D700E91012 /* MSCirclePad.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		566A9A0B207F66D100D26B75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566A9A03207F66D100D26B75 /* ViewController.swift */; };
+		566A9A0C207F66D100D26B75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566A9A04207F66D100D26B75 /* Assets.xcassets */; };
+		566A9A0D207F66D100D26B75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566A9A05207F66D100D26B75 /* LaunchScreen.storyboard */; };
+		566A9A0E207F66D100D26B75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566A9A07207F66D100D26B75 /* Main.storyboard */; };
+		566A9A0F207F66D100D26B75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566A9A09207F66D100D26B75 /* AppDelegate.swift */; };
+		566A9A10207F66D100D26B75 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 566A9A0A207F66D100D26B75 /* Info.plist */; };
+		566A9A17207F670500D26B75 /* MSCirclePad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566A9A16207F66EE00D26B75 /* MSCirclePad.framework */; };
+		566A9A18207F670500D26B75 /* MSCirclePad.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 566A9A16207F66EE00D26B75 /* MSCirclePad.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		56A3ED5F207B96D700E91012 /* PBXContainerItemProxy */ = {
+		566A9A15207F66EE00D26B75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 56A3ED5B207B96D700E91012 /* MSCirclePad.xcodeproj */;
+			containerPortal = 566A9A11207F66EE00D26B75 /* MSCirclePad.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 56F3EA6D207B948800025B7A;
 			remoteInfo = MSCirclePad;
 		};
-		56A3ED61207B96DB00E91012 /* PBXContainerItemProxy */ = {
+		566A9A19207F670500D26B75 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 56A3ED5B207B96D700E91012 /* MSCirclePad.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 56F3EA6C207B948800025B7A;
-			remoteInfo = MSCirclePad;
-		};
-		56A3ED66207B975500E91012 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 56A3ED5B207B96D700E91012 /* MSCirclePad.xcodeproj */;
+			containerPortal = 566A9A11207F66EE00D26B75 /* MSCirclePad.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 56F3EA6C207B948800025B7A;
 			remoteInfo = MSCirclePad;
@@ -47,7 +41,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				56A3ED65207B975500E91012 /* MSCirclePad.framework in Embed Frameworks */,
+				566A9A18207F670500D26B75 /* MSCirclePad.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,15 +49,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		566A42CE207B955A00968E49 /* joystick-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "joystick-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		566A42D1207B955A00968E49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		566A42D3207B955A00968E49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		566A42D6207B955A00968E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		566A42D8207B955A00968E49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		566A42DB207B955A00968E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		566A42DD207B955A00968E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		566A42CE207B955A00968E49 /* MSCirclePad-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MSCirclePad-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		566A9A03207F66D100D26B75 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		566A9A04207F66D100D26B75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		566A9A06207F66D100D26B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		566A9A08207F66D100D26B75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		566A9A09207F66D100D26B75 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		566A9A0A207F66D100D26B75 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		566A9A11207F66EE00D26B75 /* MSCirclePad.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MSCirclePad.xcodeproj; path = ../MSCirclePad.xcodeproj; sourceTree = "<group>"; };
 		56A3ED57207B965500E91012 /* MSCirclePad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MSCirclePad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		56A3ED5B207B96D700E91012 /* MSCirclePad.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MSCirclePad.xcodeproj; path = ../circlepad/MSCirclePad.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56A3ED64207B975500E91012 /* MSCirclePad.framework in Frameworks */,
+				566A9A17207F670500D26B75 /* MSCirclePad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,8 +75,8 @@
 		566A42C5207B955A00968E49 = {
 			isa = PBXGroup;
 			children = (
-				56A3ED5B207B96D700E91012 /* MSCirclePad.xcodeproj */,
-				566A42D0207B955A00968E49 /* joystick-example */,
+				566A9A11207F66EE00D26B75 /* MSCirclePad.xcodeproj */,
+				566A9A02207F66D100D26B75 /* MSCirclePad-example */,
 				566A42CF207B955A00968E49 /* Products */,
 				56A3ED52207B95C500E91012 /* Frameworks */,
 			);
@@ -91,22 +85,30 @@
 		566A42CF207B955A00968E49 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				566A42CE207B955A00968E49 /* joystick-example.app */,
+				566A42CE207B955A00968E49 /* MSCirclePad-example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		566A42D0207B955A00968E49 /* joystick-example */ = {
+		566A9A02207F66D100D26B75 /* MSCirclePad-example */ = {
 			isa = PBXGroup;
 			children = (
-				566A42D1207B955A00968E49 /* AppDelegate.swift */,
-				566A42D3207B955A00968E49 /* ViewController.swift */,
-				566A42D5207B955A00968E49 /* Main.storyboard */,
-				566A42D8207B955A00968E49 /* Assets.xcassets */,
-				566A42DA207B955A00968E49 /* LaunchScreen.storyboard */,
-				566A42DD207B955A00968E49 /* Info.plist */,
+				566A9A03207F66D100D26B75 /* ViewController.swift */,
+				566A9A04207F66D100D26B75 /* Assets.xcassets */,
+				566A9A05207F66D100D26B75 /* LaunchScreen.storyboard */,
+				566A9A07207F66D100D26B75 /* Main.storyboard */,
+				566A9A09207F66D100D26B75 /* AppDelegate.swift */,
+				566A9A0A207F66D100D26B75 /* Info.plist */,
 			);
-			path = "joystick-example";
+			path = "MSCirclePad-example";
+			sourceTree = "<group>";
+		};
+		566A9A12207F66EE00D26B75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				566A9A16207F66EE00D26B75 /* MSCirclePad.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		56A3ED52207B95C500E91012 /* Frameworks */ = {
@@ -117,20 +119,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		56A3ED5C207B96D700E91012 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				56A3ED60207B96D700E91012 /* MSCirclePad.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		566A42CD207B955A00968E49 /* joystick-example */ = {
+		566A42CD207B955A00968E49 /* MSCirclePad-example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 566A42E0207B955A00968E49 /* Build configuration list for PBXNativeTarget "joystick-example" */;
+			buildConfigurationList = 566A42E0207B955A00968E49 /* Build configuration list for PBXNativeTarget "MSCirclePad-example" */;
 			buildPhases = (
 				566A42CA207B955A00968E49 /* Sources */,
 				566A42CB207B955A00968E49 /* Frameworks */,
@@ -140,12 +134,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				56A3ED62207B96DB00E91012 /* PBXTargetDependency */,
-				56A3ED67207B975500E91012 /* PBXTargetDependency */,
+				566A9A1A207F670500D26B75 /* PBXTargetDependency */,
 			);
-			name = "joystick-example";
+			name = "MSCirclePad-example";
 			productName = "joystick-example";
-			productReference = 566A42CE207B955A00968E49 /* joystick-example.app */;
+			productReference = 566A42CE207B955A00968E49 /* MSCirclePad-example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -164,7 +157,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 566A42C9207B955A00968E49 /* Build configuration list for PBXProject "joystick-example" */;
+			buildConfigurationList = 566A42C9207B955A00968E49 /* Build configuration list for PBXProject "MSCirclePad-example" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -177,23 +170,23 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 56A3ED5C207B96D700E91012 /* Products */;
-					ProjectRef = 56A3ED5B207B96D700E91012 /* MSCirclePad.xcodeproj */;
+					ProductGroup = 566A9A12207F66EE00D26B75 /* Products */;
+					ProjectRef = 566A9A11207F66EE00D26B75 /* MSCirclePad.xcodeproj */;
 				},
 			);
 			projectRoot = "";
 			targets = (
-				566A42CD207B955A00968E49 /* joystick-example */,
+				566A42CD207B955A00968E49 /* MSCirclePad-example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		56A3ED60207B96D700E91012 /* MSCirclePad.framework */ = {
+		566A9A16207F66EE00D26B75 /* MSCirclePad.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = MSCirclePad.framework;
-			remoteRef = 56A3ED5F207B96D700E91012 /* PBXContainerItemProxy */;
+			remoteRef = 566A9A15207F66EE00D26B75 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -203,9 +196,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				566A42DC207B955A00968E49 /* LaunchScreen.storyboard in Resources */,
-				566A42D9207B955A00968E49 /* Assets.xcassets in Resources */,
-				566A42D7207B955A00968E49 /* Main.storyboard in Resources */,
+				566A9A10207F66D100D26B75 /* Info.plist in Resources */,
+				566A9A0E207F66D100D26B75 /* Main.storyboard in Resources */,
+				566A9A0C207F66D100D26B75 /* Assets.xcassets in Resources */,
+				566A9A0D207F66D100D26B75 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,41 +210,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				566A42D4207B955A00968E49 /* ViewController.swift in Sources */,
-				566A42D2207B955A00968E49 /* AppDelegate.swift in Sources */,
+				566A9A0F207F66D100D26B75 /* AppDelegate.swift in Sources */,
+				566A9A0B207F66D100D26B75 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		56A3ED62207B96DB00E91012 /* PBXTargetDependency */ = {
+		566A9A1A207F670500D26B75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MSCirclePad;
-			targetProxy = 56A3ED61207B96DB00E91012 /* PBXContainerItemProxy */;
-		};
-		56A3ED67207B975500E91012 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MSCirclePad;
-			targetProxy = 56A3ED66207B975500E91012 /* PBXContainerItemProxy */;
+			targetProxy = 566A9A19207F670500D26B75 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		566A42D5207B955A00968E49 /* Main.storyboard */ = {
+		566A9A05207F66D100D26B75 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				566A42D6207B955A00968E49 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		566A42DA207B955A00968E49 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				566A42DB207B955A00968E49 /* Base */,
+				566A9A06207F66D100D26B75 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		566A9A07207F66D100D26B75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				566A9A08207F66D100D26B75 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -370,7 +359,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R78NEXF6E2;
-				INFOPLIST_FILE = "joystick-example/Info.plist";
+				INFOPLIST_FILE = "MSCirclePad-example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stompor.mateusz.joystick-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,7 +375,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R78NEXF6E2;
-				INFOPLIST_FILE = "joystick-example/Info.plist";
+				INFOPLIST_FILE = "MSCirclePad-example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.stompor.mateusz.joystick-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -398,7 +387,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		566A42C9207B955A00968E49 /* Build configuration list for PBXProject "joystick-example" */ = {
+		566A42C9207B955A00968E49 /* Build configuration list for PBXProject "MSCirclePad-example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				566A42DE207B955A00968E49 /* Debug */,
@@ -407,7 +396,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		566A42E0207B955A00968E49 /* Build configuration list for PBXNativeTarget "joystick-example" */ = {
+		566A42E0207B955A00968E49 /* Build configuration list for PBXNativeTarget "MSCirclePad-example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				566A42E1207B955A00968E49 /* Debug */,

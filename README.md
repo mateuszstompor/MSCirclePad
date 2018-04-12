@@ -4,37 +4,76 @@
 #### How to use
 <p>The class works both with Swift and Objective-C. Requires to implement a protocol.</p>
 
+#### Objective-C
+
 ```Objective-C
 
-@interface SceneViewController () <MSCirclePadDelegate>
+@interface ViewController () <MSCirclePadDelegate>
 
 @property (weak, nonatomic) IBOutlet MSCirclePad *pad;
 
 @end
 
-@implementation SceneViewController
+@implementation ViewController
 
 - (void) viewDidLoad {
     [super viewDidLoad];
     self.pad.delegate = self;
  }
- 
- - (void) joyPositionDidChangedWithSender: (MSCirclePad * _Nonnull) sender {
+
+- (void) joyTouchRecognitionDidStartWithSender: (MSCirclePad * _Nonnull) sender {
     // do something here
+}
+
+- (void) joyPositionDidChangedWithSender: (MSCirclePad * _Nonnull) sender {
+   // do something here
 }
 
 - (void) joyTouchRecognitionDidEndWithSender: (MSCirclePad * _Nonnull) sender {
     // do something here
 }
 
-- (void) joyTouchRecognitionDidStartWithSender: (MSCirclePad * _Nonnull) sender {
-    // do something here
+```
+
+#### Swift
+
+```Swift
+
+import UIKit
+import MSCirclePad
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var pad: MSCirclePad!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        pad.delegate = self
+    }
+
+}
+
+extension ViewController : MSCirclePadDelegate {
+
+    func joyTouchRecognitionDidStart(sender: MSCirclePad) {
+       // do something here
+    }
+
+    func joyPositionDidChanged(sender: MSCirclePad) {
+        // do something here
+    }    
+
+    func joyTouchRecognitionDidEnd(sender: MSCirclePad) {
+        // do something here
+    }
+
 }
 
 ```
+
+
 
 #### version alpha-0.1
 <p align="center">
   <img src="screenshots/ver0_1.gif" width="50%" style="display:inline-block;"/>
 </p>
-
