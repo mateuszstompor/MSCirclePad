@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		56F3EA72207B948800025B7A /* CirclePad.h in Headers */ = {isa = PBXBuildFile; fileRef = 56F3EA70207B948800025B7A /* CirclePad.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56F3EA79207B94C000025B7A /* CirclePad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F3EA78207B94C000025B7A /* CirclePad.swift */; };
+		56F3EA72207B948800025B7A /* MSCirclePad.h in Headers */ = {isa = PBXBuildFile; fileRef = 56F3EA70207B948800025B7A /* MSCirclePad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56F3EA79207B94C000025B7A /* MSCirclePad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F3EA78207B94C000025B7A /* MSCirclePad.swift */; };
 		56F3EA7C207B94E900025B7A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56F3EA7B207B94E900025B7A /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		56F3EA6D207B948800025B7A /* MSCirclePad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MSCirclePad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		56F3EA70207B948800025B7A /* CirclePad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CirclePad.h; sourceTree = "<group>"; };
+		56F3EA70207B948800025B7A /* MSCirclePad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSCirclePad.h; sourceTree = "<group>"; };
 		56F3EA71207B948800025B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		56F3EA78207B94C000025B7A /* CirclePad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePad.swift; sourceTree = "<group>"; };
+		56F3EA78207B94C000025B7A /* MSCirclePad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSCirclePad.swift; sourceTree = "<group>"; };
 		56F3EA7B207B94E900025B7A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -35,7 +35,7 @@
 		56F3EA63207B948800025B7A = {
 			isa = PBXGroup;
 			children = (
-				56F3EA6F207B948800025B7A /* CirclePad */,
+				56F3EA6F207B948800025B7A /* MSCirclePad */,
 				56F3EA6E207B948800025B7A /* Products */,
 				56F3EA7A207B94E800025B7A /* Frameworks */,
 			);
@@ -49,14 +49,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		56F3EA6F207B948800025B7A /* CirclePad */ = {
+		56F3EA6F207B948800025B7A /* MSCirclePad */ = {
 			isa = PBXGroup;
 			children = (
-				56F3EA70207B948800025B7A /* CirclePad.h */,
+				56F3EA70207B948800025B7A /* MSCirclePad.h */,
+				56F3EA78207B94C000025B7A /* MSCirclePad.swift */,
 				56F3EA71207B948800025B7A /* Info.plist */,
-				56F3EA78207B94C000025B7A /* CirclePad.swift */,
 			);
-			path = CirclePad;
+			path = MSCirclePad;
 			sourceTree = "<group>";
 		};
 		56F3EA7A207B94E800025B7A /* Frameworks */ = {
@@ -74,7 +74,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56F3EA72207B948800025B7A /* CirclePad.h in Headers */,
+				56F3EA72207B948800025B7A /* MSCirclePad.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56F3EA79207B94C000025B7A /* CirclePad.swift in Sources */,
+				56F3EA79207B94C000025B7A /* MSCirclePad.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,14 +278,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = circlepad/Info.plist;
+				INFOPLIST_FILE = MSCirclePad/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULE_NAME = MSCirclePad;
 				PRODUCT_BUNDLE_IDENTIFIER = com.stompor.mateusz.circlepad;
 				PRODUCT_MODULE_NAME = MSCirclePad;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,9 +303,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = circlepad/Info.plist;
+				INFOPLIST_FILE = MSCirclePad/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULE_NAME = MSCirclePad;
 				PRODUCT_BUNDLE_IDENTIFIER = com.stompor.mateusz.circlepad;
 				PRODUCT_MODULE_NAME = MSCirclePad;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
